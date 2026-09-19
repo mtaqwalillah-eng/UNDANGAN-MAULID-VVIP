@@ -472,7 +472,7 @@
 
         <p id="authErrorMsg" class="text-[10px] text-rose-400 font-medium hidden">
           <i class="fa-solid fa-circle-exclamation mr-1"></i>
-          Nama tidak terdaftar dalam undangan VVIP. Harap masukkan nama lengkap.
+          Nama tidak terdaftar dalam undangan VVIP. Harap masukkan nama lengkap Anda.
         </p>
 
         <button onclick="verifikasiNamaTamu()" class="luxury-btn w-full py-2.5 rounded-xl bg-gradient-to-r from-[#70151c] via-[#8c1822] to-[#70151c] text-amber-100 font-cinzel font-bold text-xs tracking-widest border border-amber-400/80 shadow-lg flex items-center justify-center gap-2 transition active:scale-95">
@@ -748,6 +748,28 @@
                   </div>
                 </a>
 
+                <!-- 5. TikTok @zubaidah.hm (PERSIS DI BAWAH PANEL INSTAGRAM) -->
+                <a href="https://www.tiktok.com/@zubaidah.hm?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="futuristic-card p-1 rounded-xl flex items-center gap-1.5 group cursor-pointer">
+                  <div class="w-5 h-5 rounded-lg bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-700 group-hover:scale-110 transition-transform shrink-0">
+                    <i class="fa-brands fa-tiktok text-[11px]"></i>
+                  </div>
+                  <div class="text-left overflow-hidden">
+                    <p class="text-[6.5px] text-zinc-500 font-bold uppercase leading-none">TikTok Ustadzah Zubaidah HM</p>
+                    <p class="text-[8px] font-bold text-zinc-800 truncate group-hover:text-cyan-700 transition-colors leading-tight">@zubaidah.hm</p>
+                  </div>
+                </a>
+
+                <!-- 6. TikTok @zahrotul.muna.mtn (PERSIS DI BAWAH PANEL TIKTOK 1) -->
+                <a href="https://www.tiktok.com/@zahrotul.muna.mtn?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="futuristic-card p-1 rounded-xl flex items-center gap-1.5 group cursor-pointer">
+                  <div class="w-5 h-5 rounded-lg bg-cyan-500/15 border border-cyan-500/40 flex items-center justify-center text-cyan-700 group-hover:scale-110 transition-transform shrink-0">
+                    <i class="fa-brands fa-tiktok text-[11px]"></i>
+                  </div>
+                  <div class="text-left overflow-hidden">
+                    <p class="text-[6.5px] text-zinc-500 font-bold uppercase leading-none">TikTok MTNH</p>
+                    <p class="text-[8px] font-bold text-zinc-800 truncate group-hover:text-cyan-700 transition-colors leading-tight">@zahrotul.muna.mtn</p>
+                  </div>
+                </a>
+
               </div>
 
             </div>
@@ -995,7 +1017,7 @@
 
     function ambilNamaInti(fullName) {
       return fullName.toLowerCase()
-                     .replace(/\b(ustadzah|ustadz|ibu|bapak|bpk|hj|haji|hajjah)\b/gi, '')
+                     .replace(/\b(ustadzah|ustadz|ibu|bapak|bpk|hj|)\b/gi, '')
                      .replace(/[^a-z0-9\s]/g, '')
                      .trim()
                      .replace(/\s+/g, ' ');
